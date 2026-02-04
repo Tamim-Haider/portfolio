@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamim Haider | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" onclick="showPage('home'); return false;">
+                    <i class="fas fa-terminal"></i> $TAMIM HAIDER
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" onclick="showPage('home'); return false;">HOME</a></li>
+                    <li><a href="#" onclick="showPage('about'); return false;">ABOUT</a></li>
+                    <li><a href="#" onclick="showPage('skills'); return false;">SKILLS</a></li>
+                    <li><a href="#" onclick="showPage('education'); return false;">EDUCATION</a></li>
+                    <li><a href="#" onclick="showPage('projects'); return false;">PROJECTS</a></li>
+                    <li><a href="#" onclick="showPage('contact'); return false;">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>TAMIM HAIDER</h1>
+                    <h2>Cybersecurity Student & Ethical Hacker</h2>
+                    
+                    <div class="typewriter" id="typewriter">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    
+                    <p>I am a Computer Science and Engineering student passionate about cybersecurity, ethical hacking, and emerging technologies. My goal is to combine technical knowledge with practical skills to create secure, innovative, and future-ready solutions.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Barishal, 8200, Bangladesh</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+8801793335752</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tamimhaidercse@proton.me</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="card">
+                <h3><i class="fas fa-user-secret"></i> CYBERSECURITY ENTHUSIAST</h3>
+                <p>I am currently a Computer Science and Engineering student at the University of Global Village, passionate about technology, problem-solving, and continuous learning. My academic journey has nurtured a strong interest in cybersecurity, where I aim to explore ways to secure systems, prevent threats, and protect data in an increasingly digital world.</p>
+                
+                <p>Alongside this, I enjoy learning new technologies, working on problem-solving tasks, and strengthening my foundation in computer science. My goal is to combine technical knowledge with practical skills to contribute to secure, innovative, and future-ready solutions, with a focus on computer science, cybersecurity and ethical hacking, artificial intelligence, and emerging technologies.</p><br>
+                
+                <div class="terminal-line">
+                    <div class="terminal-prompt">root@portfolio:~$</div>
+                    <div class="terminal-text">cat interests.txt</div>
+                </div>
+                
+                <div class="skills-grid" style="margin-top: 20px;">
+                    <div class="skill-item">
+                        <h4><i class="fas fa-shield-alt"></i> Cybersecurity</h4>
+                        <p>Exploring ways to secure systems, prevent threats, and protect data.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fas fa-brain"></i> AI & Emerging Tech</h4>
+                        <p>Prompt Engineering, Artificial Intelligence, and future technologies.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fas fa-code"></i> Problem Solving</h4>
+                        <p>Working on challenging tasks and strengthening computer science foundations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Page -->
+    <section id="skills" class="page">
+        <div class="container">
+            <h2 class="section-title">SKILLS & TECHNOLOGIES</h2>
+            
+            <div class="card">
+                <h3><i class="fas fa-tools"></i> PENETRATION TESTING TOOLS</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>Metasploit</h4>
+                        <p>Penetration testing framework</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Burp Suite</h4>
+                        <p>Web vulnerability scanner</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Nmap</h4>
+                        <p>Network discovery and security auditing</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Wireshirk</h4>
+                        <p>Network discovery and monitoring tool</p>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Add this new card after the OSINT TOOLS card -->
+            <div class="card">
+                <h3><i class="fas fa-search-minus"></i> VULNERABILITY ASSESSMENT</h3>
+                <div class="skills-grid">
+                <div class="skill-item">
+                <h4>Nessus</h4>
+                <p>Vulnerability scanning and assessment</p>
+            </div>
+            <div class="skill-item">
+                <h4>Nikto</h4>
+                <p>Web server vulnerability scanner</p>
+            </div>
+            <div class="skill-item">
+                <h4>OpenVAS</h4>
+                <p>Open-source vulnerability assessment system</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Add this new card after the Vulnerability Assessment card -->
+<div class="card">
+    <h3><i class="fas fa-chart-line"></i> SIEM TOOLS</h3>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <h4>Splunk</h4>
+            <p>Security Information and Event Management platform</p>
+        </div>
+    </div>
+</div>
+
+            <div class="card">
+                <h3><i class="fas fa-key"></i> PASSWORD AUDITING</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>John the Ripper</h4>
+                        <p>Password cracking tool</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Hydra</h4>
+                        <p>Network logon cracker</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Medusa</h4>
+                        <p>Parallel login brute-forcer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-search"></i> OSINT TOOLS</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>theHarvester</h4>
+                        <p>Email, subdomain and name scraping</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Maltego</h4>
+                        <p>Open-source intelligence and forensics</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Recon-ng</h4>
+                        <p>Web reconnaissance framework</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Shodan</h4>
+                        <p>Search engine for Internet-connected devices</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-code"></i> PROGRAMMING & SCRIPTING</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>Python</h4>
+                        <p>Automation in security testing</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Bash</h4>
+                        <p>Linux command line scripting</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>C / C++</h4>
+                        <p>System programming</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Web Technologies</h4>
+                        <p>HTML, CSS, SQL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-desktop"></i> OPERATING SYSTEMS</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>Windows</h4>
+                        <p>Windows 10, 11, Windows Server</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Linux</h4>
+                        <p>Ubuntu, Kali, ParrotOS, Arch, Blackarch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Page -->
+    <section id="education" class="page">
+        <div class="container">
+            <h2 class="section-title">EDUCATION & CERTIFICATIONS</h2>
+            
+            <div class="card">
+                <h3><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 2023 - Present</div>
+                        <h4>Bachelor of Science in Computer Science & Engineering</h4>
+                        <p>University Of Global Village (UGV), Barishal</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2020 - May 2022</div>
+                        <h4>Higher Secondary Certificate</h4>
+                        <p>Govt. Suthrawady College, Priopur</p>
+                        <p>GPA: 5.00 Out of 5.00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-certificate"></i> CERTIFICATIONS & LICENSES</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>Blue Team Junior Analyst</h4>
+                        <p>Security Blue Team</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Cisco Ethical Hacker</h4>
+                        <p>Cisco Networking Academy</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-language"></i> LANGUAGES</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>Bangla</h4>
+                        <p>Native</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>English</h4>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Hindi</h4>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Urdu</h4>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Page -->
+    <section id="projects" class="page">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            
+            <div class="project-grid">
+                <div class="card project-card">
+                    <h3><i class="fas fa-desktop"></i> Desktop Assistant</h3>
+                    <p>Created a voice-controlled desktop assistant software that can perform various tasks based on voice commands.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-eye"></i> Eye Controlled Mouse</h3>
+                    <p>Developed an eye-controlled mouse system for physically disabled people to interact with computers using eye movements.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-server"></i> SAMBA Server</h3>
+                    <p>Set up a SAMBA server accessible from any OS (Linux, Windows, Mac) for file sharing across different platforms.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-shield-alt"></i> Intrusion Detection System (IDS)</h3>
+                    <p>Built a live packet capture system to detect and alert about suspicious network activities.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-file-pdf"></i> PDF Merging Software</h3>
+                    <p>Implemented software to merge multiple PDF files into a single document with customizable settings.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-book-reader"></i> Document Reader</h3>
+                    <p>Built a document reader for visually impaired users that can read any document file aloud using text-to-speech technology.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fas fa-gamepad"></i> Snake Game</h3>
+                    <p>Developed a classic snake game with score tracking, increasing difficulty levels, and smooth controls using JavaScript and HTML5 Canvas.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fas fa-car"></i> Car Racing Game</h3>
+                    <p>Built a 2D car racing game with obstacle avoidance, speed control, and multiple levels using object-oriented programming in JavaScript.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fas fa-table-tennis"></i> Break Breaker Game</h3>
+                    <p>Created a brick breaker game with physics simulation, power-ups, and level progression using HTML5 Canvas and collision detection algorithms.</p>
+                </div>
+                
+                <div class="card project-card">
+                    <h3><i class="fas fa-code"></i> X Language</h3>
+                    <p>Created a custom programming language with its own syntax, lexer, parser, and interpreter, supporting variables, loops, conditionals, and basic I/O operations.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fas fa-keyboard"></i> Keylogger Security Tool</h3>
+                    <p>Developed an educational security tool to demonstrate keyboard logging techniques for cybersecurity awareness, with encryption and stealth functionality for ethical testing purposes.</p>
+                </div>
+
+                <div class="card project-card">
+                    <h3><i class="fas fa-utensils"></i> Restaurant Webpage UI</h3>
+                    <p>Designed and implemented a responsive restaurant website with modern login and sign-up pages featuring form validation, user authentication, and secure session management.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            
+            <div class="card">
+                <h3><i class="fas fa-address-card"></i> GET IN TOUCH</h3>
+                <p>I'm always interested in hearing about new opportunities, collaborations, or just chatting about cybersecurity and technology.</p>
+                
+                <div class="contact-info" style="margin-top: 30px;">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Barishal, 8200, Bangladesh</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+8801793335752</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>tamimhaidercse@proton.me</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>www.linkedin.com/in/tamimhaider/</span>
+                    </div>
+                </div>
+                
+                <div class="terminal-line" style="margin-top: 30px;">
+                    <div class="terminal-prompt">root@portfolio:~$</div>
+                    <div class="terminal-text">echo "send_message --to tamimhaidercse@proton.me --subject 'Collaboration Opportunity'"</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> HOBBIES & INTERESTS</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4><i class="fas fa-film"></i> Movies & Series</h4>
+                        <p>Watching cybersecurity, sci-fi, and technology-related movies and series.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fas fa-laptop-code"></i> Technology Research</h4>
+                        <p>Exploring new technologies, tools, and security vulnerabilities.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fas fa-book"></i> Continuous Learning</h4>
+                        <p>Reading about cybersecurity trends, AI advancements, and tech innovations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tamimhaider" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Tamim-Haider" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/cringe_ccc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/8801793335752" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:tamimhaidercse@proton.me"><i class="fas fa-envelope"></i></a>
+</div>
+            <p class="copyright">© 2026 Tamim Haider. All rights reserved. | Portfolio</p>
+            <p class="copyright" style="margin-top: 10px; font-size: 0.8rem; color: var(--secondary-color);">
+                <i class="fas fa-terminal"></i> Access granted. System secure.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
